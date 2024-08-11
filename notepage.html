@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMUNOTE</title>
+    <link rel="stylesheet" href="../frontend/css/notepage.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <a href=""><i class="fas fa-chevron-left"></i></a>
+      <span>SMUNOTE</span>
+    </div>
+    <div class="file">
+      <div id="left">
+        <div class="left-top">
+          <span>강의 자료</span>
+          <label for="input-file"><i class="fa-regular fa-file"></i></label>
+          <input id="input-file" type="file" accept=".txt,.pdf" hidden />
+        </div>
+        <div id="left-file"></div>
+      </div>
+      <div class="right">
+        <div class="right-top">
+          <span>강의 내용 타이핑</span>
+          <span class="right-top-icon">
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-regular fa-folder-closed"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="keynote">
+      <div class="k-left">
+        <div class="k-left-top">
+          <span>나만의 노트</span>
+          <label for="save-button"
+            ><i class="fa-regular fa-floppy-disk"></i
+          ></label>
+          <input id="save-button" type="button" hidden />
+        </div>
+        <div id="mynote">
+          <textarea id="memo-editor" placeholder=""></textarea>
+        </div>
+      </div>
+      <div class="k-right">
+        <div class="k-right-top">
+          <span>KeyPoint</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom"></div>
+
+    <script
+      src="https://kit.fontawesome.com/37fc5900c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../frontend/js/notepage.js"></script>
+  </body>
+</html>

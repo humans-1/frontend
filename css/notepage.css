@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+}
+
+.topbar {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.3);
+}
+
+.topbar i {
+  font-size: 20px;
+  margin: 10px;
+  color: #0e207f;
+}
+
+.topbar span {
+  font-size: 30px;
+  font-family: serif;
+  font-weight: 700;
+  color: #0e207f;
+  margin: 10px;
+}
+
+.file {
+  display: flex;
+  justify-content: space-around;
+}
+
+#left {
+  height: 440px;
+  width: 45%;
+  margin: 15px 15px 10px 30px;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.3);
+  border-radius: 0.5cm;
+}
+
+.left-top {
+  border-top-left-radius: 0.5cm;
+  border-top-right-radius: 0.5cm;
+  background-color: #0e207f;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-top span {
+  color: white;
+  margin: 10px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.left-top i {
+  color: white;
+  margin: 10px;
+  font-size: 25px;
+}
+
+#left-file {
+  width: 45%;
+  height: 40%;
+}
+
+.right {
+  height: 440px;
+  width: 45%;
+  margin: 15px 30px 10px 15px;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.3);
+  border-radius: 0.5cm;
+}
+
+.right-top {
+  border-top-left-radius: 0.5cm;
+  border-top-right-radius: 0.5cm;
+  background-color: #0e207f;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-top span {
+  color: white;
+  margin: 10px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.right-top i {
+  font-size: 23px;
+  padding-left: 5px;
+}
+
+.keynote {
+  display: flex;
+  justify-content: space-around;
+}
+
+.k-left {
+  height: 200px;
+  width: 60%;
+  margin: 5px 0 10px 0;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.3);
+  border-radius: 0.5cm;
+}
+
+.k-left-top {
+  border-top-left-radius: 0.5cm;
+  border-top-right-radius: 0.5cm;
+  background-color: #d9d9d9;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.k-left-top span {
+  color: white;
+  margin: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.k-left-top i {
+  color: white;
+  margin: 10px;
+  font-size: 25px;
+}
+
+#save-button {
+  background: none;
+  border: none;
+}
+
+#memo-editor {
+  height: 170px;
+  width: 99.5%;
+  border: none;
+  resize: none;
+  border-bottom-left-radius: 0.5cm;
+  border-bottom-right-radius: 0.5cm;
+}
+
+.k-right {
+  height: 200px;
+  width: 30%;
+  margin: 5px 0 10px 0;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.3);
+  border-radius: 0.5cm;
+}
+
+.k-right-top {
+  border-top-left-radius: 0.5cm;
+  border-top-right-radius: 0.5cm;
+  background-color: #d9d9d9;
+  height: 30px;
+}
+
+.k-right-top span {
+  color: white;
+  margin: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.bottom {
+  background-color: #333b3d;
+  height: 12px;
+}

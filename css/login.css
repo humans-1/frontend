@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d9d9d910;
+  font-family: "Helvetica", sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px; /* 박스 너비 */
+}
+
+.SMUNOTE {
+  font-size: 30px;
+  font-family: serif;
+  font-weight: 700;
+  color: #0e207f;
+  margin: 5%;
+}
+
+.login-box input {
+  border: none;
+  border-radius: 0.3cm;
+  background-color: white;
+  margin-top: 5%;
+  padding: 5%;
+  width: 80%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-box button {
+  margin-top: 5%;
+  border: none;
+  width: calc(100% + 40px); /* 버튼의 너비를 부모 요소의 전체 너비로 확장 */
+  padding: 15px; /* 버튼 패딩 조정 */
+  background-color: #0e207f; /* 버튼 색상 */
+  color: white;
+  border-radius: 0 0 15px 15px; /* 박스와 동일한 둥근 모서리 적용 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  position: relative;
+  left: -20px; /* 버튼 위치 조정 */
+  bottom: -20px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMUNOTE 회원가입</title>
+    <link rel="stylesheet" href="../frontend/css/sign-up.css" />
+  </head>
+  <body>
+    <div class="sign-up-container">
+      <div class="sign-up-box">
+        <div class="SMUNOTE">
+          <span>SMUNOTE</span>
+        </div>
+        <form>
+          <label for="email">아이디 (사용가능한 이메일을 입력하세요.)</label>
+          <input
+            type="email"
+            id="s-email"
+            placeholder="ex) smunote@gmail.com"
+            required
+          />
+
+          <label for="password">비밀번호 (8자 이상으로 입력하세요.)</label>
+          <input type="s-password" id="password" minlength="8" required />
+
+          <label for="nickname">닉네임 (2자 이상으로 입력하세요.)</label>
+          <input type="text" id="s-nickname" minlength="2" required />
+
+          <button type="submit" id="sign-up-button">회원가입</button>
+        </form>
+      </div>
+    </div>
+    <script src="../frontend/js/sign-up.js"></script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+}
+
+.topbar {
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.3);
+  position: relative;
+  z-index: 1000; /* 상단 바가 다른 요소들보다 위에 위치하게 설정 */
+}
+
+.top-title {
+  font-size: 30px;
+  font-family: serif;
+  font-weight: 900;
+  color: #0e207f;
+  margin: 10px 10px 10px 20px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.top-user {
+  font-size: 16px;
+  color: #0e207f;
+  font-weight: 700;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  height: calc(
+    100vh - 72px
+  ); /* 화면 전체 높이에서 상단 바와 하단 바의 높이 제외 */
+  position: relative;
+  z-index: 0; /* 기본 z-index 설정 */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 1px 0 10px rgba(128, 128, 128, 0.3); /* 오른쪽에만 그림자 */
+  position: relative;
+  z-index: 10; /* 사이드바가 컨테이너보다 위에 위치하게 설정 */
+}
+
+.create-button button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.3);
+  color: #6e6f76;
+  font-weight: bold;
+  font-size: 17px;
+  border: none;
+  border-radius: 0.3cm;
+  cursor: pointer;
+}
+
+.subject-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subject-item ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.subject-title {
+  font-size: 20px;
+  color: #0e207f;
+  margin-bottom: 20px;
+}
+
+.chapter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chapter-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.2);
+  flex-basis: calc(33.333% - 20px);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bottom {
+  background-color: #333b3d;
+  height: 12px;
+}
+
+.subject-input {
+  border: none;
+  border-radius: 0.3cm;
+  width: 250px;
+  height: 40px;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.2);
+}
+
+.subject-item {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.subject-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.subject-name {
+  flex-grow: 1;
+  font-size: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 2px 6px;
+  height: fit-content;
+  align-self: center;
+}
+
+.main-content h2 {
+  color: #0e207f;
+  font-size: 40px;
+  margin: 10px;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열로 구성 */
+  gap: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: scroll;
+}
+
+.notes {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* 노트 컨테이너 스타일 */
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* 2열로 구성, 각 열이 동일한 너비를 가짐 */
+  gap: 20px;
+  justify-content: center;
+  align-items: start; /* 각 그리드 아이템이 상단에 위치하도록 정렬 */
+}
+
+.note-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #333;
+  transition: transform 0.2s ease;
+  width: 100%; /* 그리드 셀 내에서 꽉 차도록 설정 */
+  box-sizing: border-box; /* 패딩과 보더를 포함한 크기 설정 */
+  max-width: 100%; /* 최대 너비를 100%로 설정하여 커지는 것을 방지 */
+}
+
+.note-item:hover {
+  transform: translateY(-5px);
+}
+
+.note-title {
+  /* color: #0e207f; */
+  margin-top: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.note-item small {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+
+.selected-subject .note-item {
+  background-color: #f0f0f0;
+}

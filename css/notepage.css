@@ -64,8 +64,8 @@ body {
   font-size: 25px;
 }
 
-#left-file {
-  width: 45%;
+#left-file textarea {
+  width: 99%;
   height: 40%;
 }
 
@@ -176,5 +176,5 @@ body {
 
 .bottom {
   background-color: #333b3d;
-  height: 12px;
+  height: 10px;
 }

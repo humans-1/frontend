@@ -26,7 +26,7 @@ document
           textarea.style.resize = "none";
           textarea.textContent = fileContent;
           textarea.readOnly = true; // 텍스트 영역을 읽기 전용으로 설정
-          textarea.style.width = "695px"; // 텍스트 영역의 폭을 고정
+          // textarea.style.width = "100%";
           textarea.style.height = "408px"; // 텍스트 영역의 높이를 고정
           textarea.style.borderBottomLeftRadius = "0.5cm";
           textarea.style.borderBottomRightRadius = "0.5cm";

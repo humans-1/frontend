@@ -1,5 +1,5 @@
 // var API_SERVER_DOMAIN = "http://15.164.253.0:8081";
-
+// =>변경 예정 
 let loginBtn = document.getElementById("login-button");
 
 function submitLoginForm(event) {
